@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+ 
+        <property name="hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+ 
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost:5432/Student
+        </property>
+ 
+        <property name="hibernate.connection.username">
+            postgres
+        </property>
+ 
+        <property name="hibernate.connection.password">
+            Snad@123
+        </property>
+ 
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+ 
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+ 
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="org.snad.entity.Department"/>
+		<mapping class="org.snad.main.Employee"/>
+ 
+    </session-factory>
+</hibernate-configuration>
+ 
+ 
